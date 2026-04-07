@@ -1,7 +1,12 @@
 aid: wgl-holdings
-url: https://raw.githubusercontent.com/api-evangelist/wgl-holdings/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/wgl-holdings/refs/heads/main/apis.yml
 modified: '2026-03-24'
 apis: []
 common:
   - type: Website
     url: https://www.wgl-holdings.com
+description: >-
+  WGL Holdings was an integrated energy holding company with operations in regulated
+  natural gas distribution, retail energy marketing, commercial energy systems, and
+  midstream energy services before being acquired by AltaGas.
