@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/wgl-holdings/main/json-schema/wgl-holdings-customer-account-schema.json",
+  "title": "WGL Holdings Customer Account",
+  "description": "Schema representing a WGL Holdings (Washington Gas / WGL Energy Services) customer account for natural gas or electricity service.",
+  "type": "object",
+  "properties": {
+    "accountNumber": {
+      "type": "string",
+      "description": "Unique customer account identifier."
+    },
+    "serviceType": {
+      "type": "string",
+      "enum": ["NaturalGas", "Electricity", "DualFuel"],
+      "description": "Type of energy service: natural gas, electricity, or both."
+    },
+    "serviceAddress": {
+      "type": "object",
+      "description": "Address where energy service is delivered.",
+      "properties": {
+        "street": { "type": "string" },
+        "city": { "type": "string" },
+        "state": {
+          "type": "string",
+          "enum": ["DC", "MD", "VA", "PA", "DE", "OH", "NJ"]
+        },
+        "zip": { "type": "string", "pattern": "^[0-9]{5}(-[0-9]{4})?$" }
+      },
+      "required": ["street", "city", "state", "zip"]
+    },
+    "customerType": {
+      "type": "string",
+      "enum": ["Residential", "Commercial", "Industrial"],
+      "description": "Customer classification."
+    },
+    "utilityProvider": {
+      "type": "string",
+      "enum": ["WashingtonGas", "WGLEnergyServices"],
+      "description": "Identifies whether service is regulated (Washington Gas) or retail (WGL Energy Services)."
+    },
+    "rateSchedule": {
+      "type": "string",
+      "description": "Utility tariff rate schedule code applicable to the customer."
+    },
+    "meterNumber": {
+      "type": "string",
+      "description": "The physical meter identifier at the service address."
+    },
+    "usageHistory": {
+      "type": "array",
+      "description": "Historical energy usage readings.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "billingPeriodStart": {
+            "type": "string",
+            "format": "date",
+            "description": "Start date of the billing period."
+          },
+          "billingPeriodEnd": {
+            "type": "string",
+            "format": "date",
+            "description": "End date of the billing period."
+          },
+          "usage": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Energy consumed during the billing period."
+          },
+          "unit": {
+            "type": "string",
+            "enum": ["Therms", "CCF", "KWh"],
+            "description": "Unit of measurement for energy consumption."
+          },
+          "billedAmount": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Dollar amount billed for the period."
+          }
+        },
+        "required": ["billingPeriodStart", "billingPeriodEnd", "usage", "unit"]
+      }
+    },
+    "contractDetails": {
+      "type": "object",
+      "description": "For WGL Energy Services retail customers: contract terms.",
+      "properties": {
+        "contractType": {
+          "type": "string",
+          "enum": ["Fixed", "Variable", "Indexed"],
+          "description": "Pricing structure of the retail energy contract."
+        },
+        "startDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "endDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "pricePerUnit": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Contracted price per unit of energy."
+        },
+        "unit": {
+          "type": "string",
+          "enum": ["Therms", "KWh"]
+        },
+        "renewablePercentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of supply sourced from renewable energy."
+        },
+        "carbonNeutral": {
+          "type": "boolean",
+          "description": "Whether the contract includes carbon offset credits."
+        }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "description": "Account holder contact information.",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "phone": { "type": "string" }
+      }
+    }
+  },
+  "required": ["accountNumber", "serviceType", "serviceAddress", "customerType", "utilityProvider"]
+}

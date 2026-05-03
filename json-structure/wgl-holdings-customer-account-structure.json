@@ -1,0 +1,62 @@
+{
+  "name": "WGL Holdings Customer Account",
+  "description": "Structure of a WGL Holdings customer account for natural gas or electricity service.",
+  "fields": [
+    { "name": "accountNumber", "type": "string", "required": true, "description": "Unique customer account identifier." },
+    { "name": "serviceType", "type": "string", "enum": ["NaturalGas", "Electricity", "DualFuel"], "required": true },
+    {
+      "name": "serviceAddress",
+      "type": "object",
+      "required": true,
+      "fields": [
+        { "name": "street", "type": "string", "required": true },
+        { "name": "city", "type": "string", "required": true },
+        { "name": "state", "type": "string", "required": true },
+        { "name": "zip", "type": "string", "required": true }
+      ]
+    },
+    { "name": "customerType", "type": "string", "enum": ["Residential", "Commercial", "Industrial"], "required": true },
+    { "name": "utilityProvider", "type": "string", "enum": ["WashingtonGas", "WGLEnergyServices"], "required": true },
+    { "name": "rateSchedule", "type": "string", "required": false },
+    { "name": "meterNumber", "type": "string", "required": false },
+    {
+      "name": "usageHistory",
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "fields": [
+          { "name": "billingPeriodStart", "type": "string", "format": "date", "required": true },
+          { "name": "billingPeriodEnd", "type": "string", "format": "date", "required": true },
+          { "name": "usage", "type": "number", "required": true },
+          { "name": "unit", "type": "string", "enum": ["Therms", "CCF", "KWh"], "required": true },
+          { "name": "billedAmount", "type": "number", "required": false }
+        ]
+      }
+    },
+    {
+      "name": "contractDetails",
+      "type": "object",
+      "required": false,
+      "fields": [
+        { "name": "contractType", "type": "string", "enum": ["Fixed", "Variable", "Indexed"], "required": false },
+        { "name": "startDate", "type": "string", "format": "date", "required": false },
+        { "name": "endDate", "type": "string", "format": "date", "required": false },
+        { "name": "pricePerUnit", "type": "number", "required": false },
+        { "name": "unit", "type": "string", "required": false },
+        { "name": "renewablePercentage", "type": "number", "required": false },
+        { "name": "carbonNeutral", "type": "boolean", "required": false }
+      ]
+    },
+    {
+      "name": "contact",
+      "type": "object",
+      "required": false,
+      "fields": [
+        { "name": "name", "type": "string", "required": false },
+        { "name": "email", "type": "string", "format": "email", "required": false },
+        { "name": "phone", "type": "string", "required": false }
+      ]
+    }
+  ]
+}

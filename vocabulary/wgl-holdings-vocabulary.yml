@@ -1,0 +1,153 @@
+vocabulary:
+  name: WGL Holdings Vocabulary
+  description: >-
+    Domain vocabulary for WGL Holdings, an integrated energy holding company covering
+    regulated natural gas distribution, retail energy marketing, midstream services,
+    and energy storage in the Mid-Atlantic United States.
+  version: '1.0'
+  created: '2026-05-03'
+  modified: '2026-05-03'
+  tags:
+    - Energy
+    - Natural Gas
+    - Utilities
+    - Mid-Atlantic
+
+  terms:
+
+    - term: WGL Holdings
+      definition: >-
+        The parent holding company for Washington Gas, WGL Energy Services, WGL Midstream,
+        and Hampshire Gas. Acquired by AltaGas on July 6, 2018.
+      tags:
+        - Corporate
+
+    - term: Washington Gas
+      definition: >-
+        The regulated natural gas distribution utility subsidiary serving more than
+        1.2 million customers in D.C., Maryland, and Virginia. Founded in 1848,
+        it is one of the oldest gas utilities in the United States.
+      tags:
+        - Regulated Utility
+
+    - term: WGL Energy Services
+      definition: >-
+        The unregulated retail energy subsidiary selling natural gas and electricity
+        to commercial, industrial, and residential customers across multiple states.
+      tags:
+        - Retail Energy
+
+    - term: WGL Midstream
+      definition: >-
+        The midstream subsidiary of WGL Holdings focused on acquiring and optimizing
+        natural gas storage and transportation assets.
+      tags:
+        - Midstream
+
+    - term: Hampshire Gas
+      definition: >-
+        A natural gas storage subsidiary of WGL Holdings operating underground storage
+        facilities in Hampshire County, West Virginia.
+      tags:
+        - Storage
+
+    - term: AltaGas
+      definition: >-
+        The Canadian energy infrastructure company that acquired WGL Holdings on
+        July 6, 2018. AltaGas operates utilities, midstream, and power generation assets.
+      tags:
+        - Corporate
+
+    - term: Natural Gas Distribution
+      definition: >-
+        The regulated business of delivering natural gas through local pipeline networks
+        to end-use residential, commercial, and industrial customers.
+      tags:
+        - Operations
+
+    - term: Retail Energy Marketing
+      definition: >-
+        The unregulated business of purchasing and reselling natural gas and electricity
+        to customers at competitive market prices outside traditional utility tariffs.
+      tags:
+        - Operations
+
+    - term: Midstream Services
+      definition: >-
+        Energy infrastructure services including natural gas gathering, processing,
+        transportation, and storage between production and distribution.
+      tags:
+        - Operations
+
+    - term: Underground Gas Storage
+      definition: >-
+        The practice of injecting natural gas into underground formations (depleted
+        reservoirs, aquifers, salt caverns) during low-demand periods for withdrawal
+        during high-demand seasons.
+      tags:
+        - Infrastructure
+
+    - term: Utility Tariff
+      definition: >-
+        A schedule of regulated rates and terms under which a public utility provides
+        service, subject to approval by state utility regulatory commissions.
+      tags:
+        - Regulatory
+
+    - term: Public Utility Commission
+      definition: >-
+        A state government regulatory body that oversees rates, service quality, and
+        operations of regulated utilities such as Washington Gas.
+      tags:
+        - Regulatory
+
+    - term: Green Button
+      definition: >-
+        A data access initiative enabling utility customers to download or share their
+        energy usage data in a standardized XML format.
+      tags:
+        - Data Standard
+
+    - term: Distribution System Operator
+      definition: >-
+        The entity responsible for operating, maintaining, and developing the local
+        distribution network for natural gas delivery to end customers.
+      tags:
+        - Operations
+
+    - term: Carbon Neutrality
+      definition: >-
+        A service offered by WGL Energy Services allowing customers to offset their
+        carbon emissions from natural gas or electricity consumption through renewable
+        energy certificates or carbon offset credits.
+      tags:
+        - Sustainability
+
+    - term: Renewable Energy Certificate
+      definition: >-
+        A market-based instrument representing the environmental attributes of one
+        megawatt-hour of electricity generated from renewable sources.
+      tags:
+        - Sustainability
+
+    - term: Customer Energy Usage
+      definition: >-
+        Data representing a customer's historical consumption of natural gas or
+        electricity, typically measured in therms (gas) or kilowatt-hours (electricity).
+      tags:
+        - Data
+
+    - term: Therm
+      definition: >-
+        A unit of heat energy used in natural gas billing, equal to 100,000 British
+        Thermal Units (BTU). Natural gas usage is billed in therms or CCF (hundred
+        cubic feet).
+      tags:
+        - Measurement
+
+    - term: Pipeline Capacity
+      definition: >-
+        The maximum volume of natural gas that can be transported through a pipeline
+        system at a given time, subject to pressure and physical constraints.
+      tags:
+        - Infrastructure

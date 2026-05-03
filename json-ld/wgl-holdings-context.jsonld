@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "wgl": "https://www.wglholdings.com/vocab#",
+    "energy": "https://energy.gov/vocab#",
+
+    "WGLHoldings": "wgl:WGLHoldings",
+    "WashingtonGas": "wgl:WashingtonGas",
+    "WGLEnergyServices": "wgl:WGLEnergyServices",
+    "WGLMidstream": "wgl:WGLMidstream",
+    "HampshireGas": "wgl:HampshireGas",
+
+    "naturalGasDistribution": "wgl:naturalGasDistribution",
+    "retailEnergyMarketing": "wgl:retailEnergyMarketing",
+    "midstreamServices": "wgl:midstreamServices",
+    "undergroundGasStorage": "wgl:undergroundGasStorage",
+    "carbonNeutrality": "wgl:carbonNeutrality",
+
+    "customerEnergyUsage": "wgl:customerEnergyUsage",
+    "therm": "wgl:therm",
+    "pipelineCapacity": "wgl:pipelineCapacity",
+    "utilityTariff": "wgl:utilityTariff",
+    "greenButton": "wgl:greenButton",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "parentOrganization": "schema:parentOrganization",
+    "subOrganization": "schema:subOrganization",
+    "location": "schema:location",
+    "areaServed": "schema:areaServed",
+    "foundingDate": "schema:foundingDate",
+    "legalName": "schema:legalName",
+    "numberOfEmployees": "schema:numberOfEmployees",
+    "address": "schema:address",
+    "contactPoint": "schema:contactPoint",
+    "sameAs": "schema:sameAs",
+    "knowsAbout": "schema:knowsAbout",
+
+    "Utility": "schema:Utility",
+    "Organization": "schema:Organization",
+    "Corporation": "schema:Corporation",
+    "Service": "schema:Service",
+    "EnergyConsumption": "schema:EnergyConsumption",
+
+    "RenewableEnergyAccount": "wgl:RenewableEnergyAccount",
+    "GasAccount": "wgl:GasAccount",
+    "ElectricAccount": "wgl:ElectricAccount",
+    "UsageHistory": "wgl:UsageHistory",
+    "BillingPeriod": "wgl:BillingPeriod"
+  }
+}
