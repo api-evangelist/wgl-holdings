@@ -6,12 +6,6 @@ WGL Holdings was an integrated energy holding company headquartered in Washingto
 
 ## Business Units
 
-### Washington Gas
-
-The regulated natural gas distribution utility subsidiary serving more than 1.2 million customers in D.C., Maryland, and Virginia. Founded in 1848, it is one of the oldest gas utilities in the United States.
-
-- **Website:** https://www.washingtongas.com
-- **Customer Portal:** https://www.washingtongas.com/my-account
 
 ### WGL Energy Services
 
