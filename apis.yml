@@ -78,6 +78,11 @@ apis:
     tags:
       - Midstream
       - Natural Gas Storage
+      - Pipelines
+      - Energy Assets
+    tags_raw:
+      - Midstream
+      - Natural Gas Storage
       - Pipeline
       - Energy Assets
     properties:
@@ -92,6 +97,11 @@ apis:
       storage services that support pipeline operations and supply reliability.
     humanURL: https://www.wgl.com
     tags:
+      - Natural Gas Storage
+      - Underground Storage
+      - West Virginia
+      - Pipelines
+    tags_raw:
       - Natural Gas Storage
       - Underground Storage
       - West Virginia
