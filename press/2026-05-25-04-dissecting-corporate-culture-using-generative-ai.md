@@ -1,7 +1,9 @@
 ---
 title: Dissecting Corporate Culture Using Generative AI
 url: https://www.ecgi.global/sites/default/files/Paper%3A%20Dissecting%20Corporate%20Culture%20Using%20Generative%20AI%20%20%E2%80%93%20Insights%20from%20Analyst%20Reports.pdf
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"WGL Holdings" press release artificial intelligence'
 position: 4
 source: serpapi-google

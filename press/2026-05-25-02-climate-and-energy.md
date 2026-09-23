@@ -1,7 +1,9 @@
 ---
 title: Climate and Energy
 url: https://www.asyousow.org/our-work/climate-and-energy
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"WGL Holdings" press release artificial intelligence'
 position: 2
 source: serpapi-google
