@@ -64,61 +64,133 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-WGL Holdings was an integrated energy holding company headquartered in Washington, D.C., serving over 1 million customers across the District of Columbia, Maryland, and Virginia. Its operations spanned regulated natural gas distribution (Washington Gas), retail energy marketing (WGL Energy Services), commercial energy systems, and midstream energy services (WGL Midstream, Hampshire Gas). WGL Holdings was acquired by AltaGas on July 6, 2018.
+WGL Holdings was an integrated energy holding company headquartered in Washington, D.C., serving over 1 million customers across the District of Columbia, Maryland, and Virginia. Its operations spanned regulated natural gas distribution (Washington Gas), retail energy marketing (WGL Energy Services), commercial energy systems, and midstream energy services (WGL Midstream, Hampshire Gas). WGL Holdings was acquired by AltaGas on July 6, 2018, and continues to operate as a subsidiary.
 
-**Website:** https://www.wglholdings.com
+**Areas:** Energy · Natural Gas · Utilities · Electricity · Retail Energy · Midstream · Fortune 1000
 
-## Business Units
+## WGL Holdings on APIs.io
 
+Everything profiled for WGL Holdings is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/wgl-holdings/](https://apis.io/providers/wgl-holdings/)** — or go straight to one of the APIs or properties below.
 
-### WGL Energy Services
+### APIs (3)
 
-The unregulated retail energy subsidiary selling natural gas and electricity to commercial, industrial, and residential customers in Maryland, Virginia, Delaware, Pennsylvania, Ohio, D.C., and New Jersey. Also offers renewable energy products and carbon neutrality solutions.
+- [WGL Energy Services](https://apis.io/apis/wgl-holdings/wgl-energy-services/) — WGL Energy Services is an unregulated retail energy subsidiary of WGL Holdings that sells natural gas and electricity to commercial, industrial, and…
+- [WGL Midstream](https://apis.io/apis/wgl-holdings/wgl-midstream/) — WGL Midstream, Inc. is a subsidiary of Washington Gas Resources engaged in acquiring and optimizing natural gas storage and transportation assets. It…
+- [Hampshire Gas](https://apis.io/apis/wgl-holdings/hampshire-gas/) — Hampshire Gas Company owns and operates interests in natural gas storage facilities in and around Hampshire County, West Virginia. It provides underground…
 
-- **Website:** https://www.wglenergy.com
-- **Customer Portal:** https://my.wges.com
+### Published properties
 
-### WGL Midstream
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The midstream subsidiary focused on acquiring and optimizing natural gas storage and transportation assets.
+#### JSON Schema (1)
 
-- **Website:** https://www.wgl.com
+The data models the API reads and writes.
 
-### Hampshire Gas
+- [WGL Holdings Customer Account](https://apis.io/schemas/wgl-holdings/wgl-holdings-customer-account/)
 
-Natural gas storage subsidiary operating underground storage facilities in Hampshire County, West Virginia.
+#### JSON Structure (1)
 
-- **Website:** https://www.wgl.com
+Data models expressed in JSON Structure.
 
-## JSON Schemas
+- [Wgl Holdings Customer Account Structure](https://apis.io/json-structure/wgl-holdings/wgl-holdings-customer-account-structure/)
 
-| Schema | Description |
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Wgl Holdings Context](https://apis.io/jsonld/wgl-holdings/wgl-holdings-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [WGL Holdings Vocabulary](https://apis.io/vocabularies/wgl-holdings/wgl-holdings-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [WGL Holdings — jsonschema rules](https://apis.io/rules/wgl-holdings/wgl-holdings-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Wgl Holdings Domain Security](https://apis.io/security/wgl-holdings/wgl-holdings-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Wgl Holdings Plans Pricing](https://apis.io/plans/wgl-holdings/wgl-holdings-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Wgl Holdings Rate Limits](https://apis.io/rate-limits/wgl-holdings/wgl-holdings-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Wgl Holdings Finops](https://apis.io/finops/wgl-holdings/wgl-holdings-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.wglholdings.com)
+
+## API Evangelist rating
+
+**Kin Score 15.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| [WGL Holdings Customer Account](json-schema/wgl-holdings-customer-account-schema.json) | Schema for natural gas and electricity customer accounts |
+| Discoverability | 62.5 |
+| Contract quality | 10.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 14.5 |
 
-## JSON Structures
+**Agent readiness 0.6** — human-only
 
-| Structure | Description |
+| Agent-readiness dimension | Result |
 |---|---|
-| [WGL Holdings Customer Account](json-structure/wgl-holdings-customer-account-structure.json) | Structure of a customer account |
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-## JSON-LD Context
+**Regulatory alignment 9.0** — Energy & Utilities
 
-- [wgl-holdings-context.jsonld](json-ld/wgl-holdings-context.jsonld) — Linked data context mapping WGL energy vocabulary to schema.org
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/wgl-holdings/](https://apis.io/providers/wgl-holdings/).
 
-## Vocabulary
+## How this profile is made
 
-- [wgl-holdings-vocabulary.yml](vocabulary/wgl-holdings-vocabulary.yml) — Domain vocabulary for energy distribution, retail energy, midstream, and storage
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Common Resources
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for WGL Holdings: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Type | URL |
-|---|---|
-| Website | https://www.wglholdings.com |
-| Parent Company (AltaGas) | https://www.altagas.ca |
-| Washington Gas | https://www.washingtongas.com |
-| WGL Energy | https://www.wglenergy.com |
-| Sustainability | https://sustainability.wglholdings.com |
-| Wikipedia | https://en.wikipedia.org/wiki/WGL_Holdings |
+## Open an issue
 
-**Maintainer:** Kin Lane (kin@apievangelist.com)
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/wgl-holdings/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
